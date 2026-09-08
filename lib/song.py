@@ -30,9 +30,11 @@ class Song:
         if artist not in cls.artists:
             cls.artists.append(artist)
 
+
     @classmethod
     def add_to_genre_count(cls, genre):
         cls.genre_count[genre] = cls.genre_count.get(genre, 0) + 1
+
 
     @classmethod
     def add_to_artists_count(cls, artist):
